@@ -1,0 +1,44 @@
+#header{
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1500;
+
+}
+@include breakpoint-max($bp-medium) {
+.nav-bar{
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    display: none;
+}
+}
+.nav-bar{
+    line-height: 5rem;
+}
+.logo-link{
+    color: #ffffff;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+.nav-link{
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    padding: 1rem 2.1rem;
+    margin: -1rem -2.1rem;
+
+    &:hover{
+        color: #ffd3ef;
+        background-color: #0000006b;
+    }
+}
